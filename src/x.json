@@ -1,0 +1,90 @@
+{
+    "createdAt": "2024-07-24T02:16:47.427534",
+    "events": [
+        {
+            "eventName": "StartBalootGameEvent",
+            "triggeredAt": "2024-07-23T23:17:11.012034Z",
+            "usName": "لنا",
+            "themName": "لهم",
+            "sakkaCountPerGame": 5,
+            "longitude": 31.453118020895364,
+            "latitude": 30.16289007352366
+        },
+        {
+            "eventName": "StartSakkaEvent",
+            "triggeredAt": "2024-07-23T23:17:11.012094Z",
+            "isSakkaMashdoda": false
+        },
+        {
+            "eventName": "StartMoshtaraEvent",
+            "triggeredAt": "2024-07-23T23:17:11.012121Z"
+        },
+        {
+            "eventName": "ChangeSakkaCountPerGameEvent",
+            "triggeredAt": "2024-07-23T23:17:11.012161Z",
+            "sakkaCountPerGame": 1
+        },
+        {
+            "eventName": "EndMoshtaraEvent",
+            "triggeredAt": "2024-07-23T23:17:11.012207Z",
+            "recordingMode": "Regular",
+            "usAbnat": 99,
+            "themAbnat": 0,
+            "advancedDetails": null
+        },
+        {
+            "eventName": "StartMoshtaraEvent",
+            "triggeredAt": "2024-07-23T23:17:11.012210Z"
+        },
+        {
+            "eventName": "EndMoshtaraEvent",
+            "triggeredAt": "2024-07-23T23:17:11.012213Z",
+            "recordingMode": "Regular",
+            "usAbnat": 99,
+            "themAbnat": 0,
+            "advancedDetails": null
+        },
+        {
+            "eventName": "EndSakkaEvent",
+            "triggeredAt": "2024-07-23T23:17:11.012282Z",
+            "winner": "Us",
+            "drawHandler": "ExtraMoshtara"
+        },
+        {
+            "eventName": "EndGameEvent",
+            "triggeredAt": "2024-07-23T23:17:11.012339Z",
+            "winner": "Us"
+        },
+        {
+            "eventName": "RemoveMoshtaraEvent",
+            "triggeredAt": "2024-07-23T23:17:11.012368Z"
+        },
+        {
+            "eventName": "PauseGameEvent",
+            "triggeredAt": "2024-07-23T23:17:11.012405Z"
+        },
+        {
+            "eventName": "ResumeGameEvent",
+            "triggeredAt": "2024-07-23T23:17:12.190731Z"
+        },
+        {
+            "eventName": "EndMoshtaraEvent",
+            "triggeredAt": "2024-07-23T23:17:14.964485Z",
+            "recordingMode": "Regular",
+            "usAbnat": 99,
+            "themAbnat": 0,
+            "advancedDetails": null
+        },
+        {
+            "eventName": "EndSakkaEvent",
+            "triggeredAt": "2024-07-23T23:17:14.964629Z",
+            "winner": "Us",
+            "drawHandler": "ExtraMoshtara"
+        },
+        {
+            "eventName": "EndGameEvent",
+            "triggeredAt": "2024-07-23T23:17:14.964681Z",
+            "winner": "Us"
+        }
+    ]
+}
