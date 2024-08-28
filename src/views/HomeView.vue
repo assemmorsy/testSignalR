@@ -3,7 +3,7 @@ import * as signalR from "@microsoft/signalr";
 import { onMounted, ref } from "vue";
 
 const connection = new signalR.HubConnectionBuilder()
-  .withUrl("https://sam-baloot-admin.online/qydha/baloot-games-hub", {
+  .withUrl("https://sam-baloot-admin.online/saudi-baloot-olympics/dev/bracket-hub", {
     withCredentials: true
   })
   .build();
@@ -11,19 +11,15 @@ const connection = new signalR.HubConnectionBuilder()
 onMounted(async () => {
   try {
     await connection.start();
-    let res = await connection.invoke("addToBoardGroup", "3803a189-53af-4bde-b36c-b8e7937984c6");
-    console.log(res);
-    gameString.value = res;
+    gameString.value = await connection.invoke('GetGroupBracket', 17);
   }
   catch (err) {
     console.error(err);
   }
 
-  connection.on("balootGameStateChanged", (eventsEffect: string, game: string) => {
-    console.log("function called");
-    console.log(eventsEffect);
-    console.log(game);
-    gameString.value = game;
+  connection.on("BracketChanged", (groupId: number, groupData: string) => {
+    console.log(groupData);
+    gameString.value = groupData;
   });
 })
 
