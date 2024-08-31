@@ -28,6 +28,7 @@ const gameString = ref<null | string>(null);
 
 <template>
   <main>
-    {{ gameString }}
+    <RouterLink to="camera">go to camera</RouterLink>
+    <!-- {{ gameString }} -->
   </main>
 </template>
