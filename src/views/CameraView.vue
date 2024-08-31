@@ -6,7 +6,9 @@ const ctx = ref<any>(null);
 
 const constraints = ref({
     audio: false,
-    video: true
+    video: {
+        facingMode: 'environment'
+    }
 });
 onMounted(async () => {
     if (video.value) {
@@ -35,7 +37,7 @@ const draw = () => {
 <template>
 
     <video ref="video" autoplay playsinline webkit-playsinline muted hidden></video>
-    <canvas ref="canvas" width="1280" height="720" class="canvas"></canvas>
+    <canvas ref="canvas" width="1080" height="1920" class="canvas"></canvas>
 </template>
 
 <style>
